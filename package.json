@@ -1,0 +1,24 @@
+{
+  "name": "pulse-radar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PulseRadar - 多源 AI 热点雷达：聚合多个信息源、AI 相关性判定、实时推送与 Agent Skill 封装",
+  "license": "MIT",
+  "packageManager": "pnpm@10.34.5",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "pnpm --parallel --filter @pulseradar/server --filter @pulseradar/web dev",
+    "dev:server": "pnpm --filter @pulseradar/server dev",
+    "dev:web": "pnpm --filter @pulseradar/web dev",
+    "build": "pnpm --filter @pulseradar/server build && pnpm --filter @pulseradar/web build",
+    "test": "pnpm --filter @pulseradar/server test",
+    "lint": "pnpm --filter @pulseradar/web lint",
+    "typecheck": "pnpm --filter @pulseradar/server typecheck && pnpm --filter @pulseradar/web typecheck",
+    "db:generate": "pnpm --filter @pulseradar/server db:generate",
+    "db:push": "pnpm --filter @pulseradar/server db:push",
+    "db:migrate": "pnpm --filter @pulseradar/server db:migrate",
+    "db:studio": "pnpm --filter @pulseradar/server db:studio"
+  }
+}
