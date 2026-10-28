@@ -1,0 +1,19 @@
+node_modules/
+dist/
+coverage/
+
+# 环境变量与本地数据
+.env
+.env.*
+!.env.example
+*.db
+*.db-journal
+server/prisma/*.db
+server/prisma/*.db-journal
+
+# 编辑器 / 系统
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.log
